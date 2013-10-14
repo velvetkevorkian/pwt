@@ -39,6 +39,41 @@ h1{
     }
 }
 
+.date{
+    width: 80%;
+    margin: 0 auto;
+    background: white;
+    padding: 6px;
+    position: relative;
+    h2{
+        position:relative;
+        text-align:center;
+        color: $offBlack;
+        font-size: 32px;
+        z-index:2;
+    }
+    .bannerLeft, .bannerRight{
+        width: 19%;
+        height: 80%;
+        position:absolute;
+        bottom: 11%;
+        z-index:1;
+    }
+    
+    .bannerLeft{
+        left: -10%;
+    }
+    .bannerRight{
+        right: -10%;
+    }
+        
+}
+
+.star{
+    font-size: 0.5em;
+    vertical-align:middle;
+}
+
 p{
     @include sans;
 }
@@ -99,6 +134,12 @@ body{
         right: -5%;
     }
         
+}
+
+#drinks, #pens{
+    h4{
+        padding-top: 5%;
+    }
 }
 
 .wrap{

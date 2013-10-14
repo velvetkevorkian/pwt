@@ -17,6 +17,33 @@ h1:before {
 h1:after {
   content: url("img/bannerRight.svg"); }
 
+.date {
+  width: 80%;
+  margin: 0 auto;
+  background: white;
+  padding: 6px;
+  position: relative; }
+  .date h2 {
+    position: relative;
+    text-align: center;
+    color: #353435;
+    font-size: 32px;
+    z-index: 2; }
+  .date .bannerLeft, .date .bannerRight {
+    width: 19%;
+    height: 80%;
+    position: absolute;
+    bottom: 11%;
+    z-index: 1; }
+  .date .bannerLeft {
+    left: -10%; }
+  .date .bannerRight {
+    right: -10%; }
+
+.star {
+  font-size: 0.5em;
+  vertical-align: middle; }
+
 p {
   font-family: helvetica, arial, sans-serif; }
 
@@ -67,6 +94,9 @@ body {
     left: -5%; }
   .graphic .bannerRight {
     right: -5%; }
+
+#drinks h4, #pens h4 {
+  padding-top: 5%; }
 
 .wrap {
   background-color: black;
