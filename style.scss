@@ -81,35 +81,24 @@ body{
         position: absolute;
         bottom: 0;
         width: 90%;
+        left: 5%;
         height: 20%;
         background: white;
         color: $offBlack;
-        
-        &:before{
-            content:"";
-            background: black;
-            -webkit-transform:rotate(45deg);
-            position: absolute;
-            left: -20%;
-            bottom: 6%;
-            height: 100%;
-            width: 28%;
-           // min-height: 50px;
-        //    min-width: 50px;
-            }
-            
-        &:after{
-            content: "";
-            background:  black;
-            -webkit-transform: rotate(-45deg);
-            //background-size:cover;
-            position: absolute;
-            bottom: 6%;
-            right: -20%;
-            height: 100%;
-            width: 28%;
-        }
     }
+    .bannerLeft, .bannerRight{
+        width: 19%;
+        height: 16%;
+        position:absolute;
+        bottom: 2%;
+    }
+    .bannerLeft{
+        left: -5%;
+    }
+    .bannerRight{
+        right: -5%;
+    }
+        
 }
 
 .wrap{
