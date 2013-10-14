@@ -76,32 +76,38 @@ body{
         width: 100%;
     }
     h4{
+        text-align: center;
         margin: 0 auto;
         position: absolute;
         bottom: 0;
-        width: 80%;
+        width: 90%;
         height: 20%;
         background: white;
         color: $offBlack;
         
         &:before{
             content:"";
-            background: transparent url('img/bannerLeft.svg');
+            background: black;
+            -webkit-transform:rotate(45deg);
             position: absolute;
             left: -20%;
-            bottom: 0;
-            height: 20%;
+            bottom: 6%;
+            height: 100%;
+            width: 28%;
+           // min-height: 50px;
+        //    min-width: 50px;
             }
             
         &:after{
             content: "";
-            background:  transparent url('img/bannerRight.svg');
-            background-size:cover;
+            background:  black;
+            -webkit-transform: rotate(-45deg);
+            //background-size:cover;
             position: absolute;
-            bottom: 0;
+            bottom: 6%;
             right: -20%;
             height: 100%;
-            width: 36%;
+            width: 28%;
         }
     }
 }
