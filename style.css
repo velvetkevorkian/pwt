@@ -9,6 +9,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'bebas_neueregular', helvetica, arial, sans-serif;
   color: whitesmoke; }
 
+h1:before {
+  content: url("img/bannerLeft.svg"); }
+h1:after {
+  content: url("img/bannerRight.svg"); }
+
 p {
   font-family: helvetica, arial, sans-serif; }
 
