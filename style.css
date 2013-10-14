@@ -19,7 +19,7 @@ h1:after {
 
 .date {
   width: 80%;
-  margin: 0 auto;
+  margin: 25px auto;
   background: white;
   padding: 6px;
   position: relative; }
@@ -71,7 +71,7 @@ body {
   background: transparent;
   position: relative;
   width: 70%;
-  margin: 0 auto;
+  margin: 25px auto;
   text-align: center; }
   .graphic img {
     width: 100%; }
