@@ -18,6 +18,10 @@
     font-family: helvetica, arial, sans-serif;
 }
 
+*, *:before, *:after{
+    box-sizing:border-box;
+}
+
 h1, h2, h3, h4, h5, h6{
     @include bebas;
     color: rgb(245, 245, 245);
@@ -39,6 +43,17 @@ p{
 body{
     background: black;
     margin: 0;
+    min-width: 320px;
+}
+
+.unionLogos{
+    width: 90%;
+    margin: 0 auto;
+    padding: 6px 5%; 
+    img{
+        width: 29%;
+        margin: 0 3% 0 0;
+    }
 }
 .logo{
     pointer-events: none;
