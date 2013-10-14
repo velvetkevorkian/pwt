@@ -40,6 +40,39 @@ body {
   .logo img {
     width: 100%; }
 
+.graphic {
+  background: transparent;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center; }
+  .graphic img {
+    width: 100%; }
+  .graphic h4 {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 20%;
+    background: white;
+    color: #353435; }
+    .graphic h4:before {
+      content: "";
+      background: transparent url("img/bannerLeft.svg");
+      position: absolute;
+      left: -20%;
+      bottom: 0;
+      height: 20%; }
+    .graphic h4:after {
+      content: "";
+      background: transparent url("img/bannerRight.svg");
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+      right: -20%;
+      height: 100%;
+      width: 36%; }
+
 .wrap {
   background-color: black;
   width: 100%;

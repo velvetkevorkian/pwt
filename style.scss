@@ -1,3 +1,5 @@
+$offBlack: rgb(53,52,53);
+
 @font-face {
     font-family: 'bebas_neueregular';
     src: url('fonts/bebasneue-webfont.eot');
@@ -61,6 +63,46 @@ body{
     width: 90%;
     img{
         width: 100%;
+    }
+}
+
+.graphic{
+    background: transparent;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    img{
+        width: 100%;
+    }
+    h4{
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        width: 80%;
+        height: 20%;
+        background: white;
+        color: $offBlack;
+        
+        &:before{
+            content:"";
+            background: transparent url('img/bannerLeft.svg');
+            position: absolute;
+            left: -20%;
+            bottom: 0;
+            height: 20%;
+            }
+            
+        &:after{
+            content: "";
+            background:  transparent url('img/bannerRight.svg');
+            background-size:cover;
+            position: absolute;
+            bottom: 0;
+            right: -20%;
+            height: 100%;
+            width: 36%;
+        }
     }
 }
 
