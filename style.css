@@ -21,6 +21,17 @@ p {
   color: white;
   font-family: 'Titillium Web', sans-serif; }
 
+a {
+  -webkit-transition: all 500ms ease-in;
+  -mox-transition: all 500ms ease-in;
+  -ms-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in; }
+  a:link, a:visited {
+    color: white; }
+  a:hover {
+    color: #d68005; }
+
 .date {
   width: 80%;
   margin: 25px auto;

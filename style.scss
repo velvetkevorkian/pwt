@@ -57,6 +57,16 @@ p{
    @include tits;
 }
 
+a{
+    &:link, &:visited{
+        color: white;
+    }
+    &:hover{
+        color: rgb(214, 128, 5);
+    }
+    @include trans;
+}
+
 .date{
     width: 80%;
     margin: 25px auto;
