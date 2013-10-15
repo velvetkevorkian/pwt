@@ -19,7 +19,7 @@ h1:after {
 
 p {
   color: white;
-  font-family: 'helvetica', 'arial', sans-serif; }
+  font-family: 'Titillium Web', sans-serif; }
 
 .date {
   width: 80%;
@@ -47,9 +47,6 @@ p {
 .star {
   font-size: 0.5em;
   vertical-align: middle; }
-
-p {
-  font-family: 'helvetica', 'arial', sans-serif; }
 
 body {
   background: black;

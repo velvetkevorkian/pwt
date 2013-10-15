@@ -12,6 +12,10 @@ $offBlack: rgb(53,52,53);
 
 }
 
+@mixin tits{
+    font-family: 'Titillium Web', sans-serif;
+}
+
 @mixin bebas{
     font-family: 'bebas_neueregular', helvetica, arial, sans-serif;
 }
@@ -41,7 +45,7 @@ h1{
 
 p{
     color: white;
-   @include sans;
+   @include tits;
 }
 
 .date{
@@ -79,9 +83,6 @@ p{
     vertical-align:middle;
 }
 
-p{
-    @include sans;
-}
 body{
     background: black;
     margin: 0;
