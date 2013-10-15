@@ -8,4 +8,21 @@ $(document).ready(function(){
         until: time 
     });
     
+    setupLink($("[href='#what']"), $('#what'));
+    setupLink($("[href='#drinksText']"), $('#drinksText'));
+    setupLink($("[href='#pensText']"), $('#pensText'));
+
+    
+    
 });
+
+
+function setupLink(theLink, theTarget) {
+    theLink.click(function (e) {
+        e.preventDefault();
+        var s = theTarget.offset().top;
+        $("body, html").animate({
+            scrollTop: s
+        }, 500);
+    });
+}
