@@ -1,5 +1,6 @@
 $offBlack: rgb(53,52,53);
 $breakpoint: 'screen and (min-width: 769px)';
+$fontBreakpoint: 'screen and (min-width: 1024px)';
 
 @font-face {
     font-family: 'bebas_neueregular';
@@ -15,7 +16,7 @@ $breakpoint: 'screen and (min-width: 769px)';
 
 @mixin trans{
     -webkit-transition: all 500ms ease-in; 
-    -mox-transition: all 500ms ease-in; 
+    -moz-transition: all 500ms ease-in; 
     -ms-transition: all 500ms ease-in; 
     -o-transition: all 500ms ease-in; 
     transition: all 500ms ease-in; 
@@ -171,7 +172,7 @@ body{
         //clear: both;
         float: left;
         width: 27%;
-        margin: 0 3%;
+        margin: 0 3% 100px 3%;
     }
         
     img{
@@ -230,17 +231,65 @@ body{
 }
 
 .content{
-    display: none;
     width: 70%;
     margin: 0 auto;
     text-align: center;
+    @media #{$breakpoint}{
+        position: relative;
+        top: 500px;
+    }
     p{
-        font-size: 18px;
+        font-size: 16px;
         margin-top: 0;
+        @media #{$fontBreakpoint}{
+            font-size: 18px;
+        }
     }
     h3{
         font-size: 24px;
         margin-bottom: 8px;
+        @media #{$breakpoint}{
+            width: 60%;
+            position: absolute;
+            top: 0;
+            //float: left;
+            right: 0;
+            //border: 1px solid red;
+            text-align: left;
+            margin: 6px 0;
+        }
+        
+    }
+    
+    
+}
+
+.explanation{
+    position: relative;
+    img{
+        display: none;
+        @media #{$breakpoint}{
+            display: block;
+            //float: left;
+            position: absolute;
+            top: 12px;
+            left: 0;
+            width: 35%;
+        }
+    }
+    @media #{$breakpoint}{
+        min-height: 500px;
+        
+        p{
+            width: 60%;
+            //border: 1px solid red;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            text-align:left;
+            
+        }
+        
     }
 }
 
