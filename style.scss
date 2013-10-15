@@ -180,3 +180,19 @@ body{
         margin-bottom: 8px;
     }
 }
+
+.djs{
+    width: 70%;
+    margin: 0 auto;
+    text-align:center;
+    h5{
+        margin: 0;
+        &:before, &:after{
+            content: " - ";
+        }
+    }
+    h2{
+        margin-top: 12px;
+    }
+    
+}

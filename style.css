@@ -130,3 +130,14 @@ body {
   .content h3 {
     font-size: 24px;
     margin-bottom: 8px; }
+
+.djs {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center; }
+  .djs h5 {
+    margin: 0; }
+    .djs h5:before, .djs h5:after {
+      content: " - "; }
+  .djs h2 {
+    margin-top: 12px; }
