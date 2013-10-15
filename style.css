@@ -21,16 +21,20 @@ p {
   color: white;
   font-family: 'Titillium Web', sans-serif; }
 
-a {
+.djs a {
+  text-decoration: none;
+  border-bottom: 2px solid white;
   -webkit-transition: all 500ms ease-in;
   -moz-transition: all 500ms ease-in;
   -ms-transition: all 500ms ease-in;
   -o-transition: all 500ms ease-in;
   transition: all 500ms ease-in; }
-  a:link, a:visited {
+  .djs a:link, .djs a:visited {
+    margin-bottom: -2px;
     color: white; }
-  a:hover {
-    color: #d68005; }
+  .djs a:hover {
+    color: #d68005;
+    border-bottom-color: #d68005; }
 
 .date {
   width: 80%;
@@ -69,7 +73,8 @@ a {
 body {
   background: black;
   margin: 0 auto;
-  min-width: 320px; }
+  min-width: 320px;
+  max-width: 1280px; }
 
 .unionLogos {
   width: 90%;
@@ -82,6 +87,7 @@ body {
   transition: all 500ms ease-in; }
   @media screen and (min-width: 769px) {
     .unionLogos {
+      max-width: 575px;
       position: absolute;
       width: 45%;
       left: 2%;
@@ -101,6 +107,7 @@ body {
   transition: all 500ms ease-in; }
   @media screen and (min-width: 769px) {
     .logo {
+      max-width: 575px;
       position: absolute;
       top: 35px;
       left: 2%;
@@ -171,6 +178,9 @@ body {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  max-width: 1280px; }
+
+.tophalf {
   max-width: 1280px; }
 
 .content {
