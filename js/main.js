@@ -20,7 +20,7 @@ $(document).ready(function(){
 function setupLink(theLink, theTarget) {
     theLink.click(function (e) {
         e.preventDefault();
-        var s = theTarget.offset().top;
+        var s = theTarget.offset().top-200;
         $("body, html").animate({
             scrollTop: s
         }, 500);
