@@ -34,10 +34,6 @@ $fontBreakpoint: 'screen and (min-width: 1024px)';
     font-family: 'bebas_neueregular', helvetica, arial, sans-serif;
 }
 
-@mixin sans{
-    font-family: 'helvetica', 'arial', sans-serif;
-}
-
 *, *:before, *:after{
     box-sizing:border-box;
 }
@@ -48,20 +44,80 @@ h1, h2, h3, h4, h5, h6{
     color: rgb(245, 245, 245);
 }
 
-h1{
-    &:before{
-        content: url('img/bannerLeft.svg');
-    }
-    
-    &:after{
-        content: url('img/bannerRight.svg');
-    }
-}
 
 p{
     color: white;
    @include tits;
 }
+
+.unionLogos{    
+    @include grid-row();
+    @include trans;
+    padding: 2.5%;
+    img{
+       @include grid-column($columns: 4);
+    }
+}
+.logo{
+    @include grid-row();
+    @include trans;
+    padding: 2.5%;
+    img{
+        width: 100%;
+    }
+}
+
+
+#countdown{
+    color: white; 
+    @include bebas;
+    @include trans;
+    @include grid-row();
+
+}
+
+.date{
+    @include grid-row();
+    //padding: 0 5%;
+//   
+//    margin: 25px auto;
+    
+//    padding: 6px;
+    position: relative;
+    //@include trans;
+    
+    h2{
+        //position:relative;
+        @include grid-column($columns: 8);
+        background: white;
+         //width: 80%;
+        text-align:center;
+        color: $offBlack;
+        font-size: 32px;
+        z-index:2;
+        margin: 12px 0;
+    }
+    .bannerLeft, .bannerRight{
+        @include grid-column($columns: 2);
+//        display: none;
+//        width: 19%;
+//        height: 80%;
+//        position:absolute;
+//        bottom: 11%;
+        z-index:1;
+    }
+    
+    .bannerLeft{
+//        left: -8%;
+    }
+    .bannerRight{
+//        right: -8%;
+    }
+        
+}
+
+
+
 
 .djs{
     max-width: 666px;
@@ -80,44 +136,7 @@ a{
 }
 }
 
-.date{
-    width: 80%;
-    margin: 25px auto;
-    background: white;
-    padding: 6px;
-    position: relative;
-    //@include trans;
-    @media #{$breakpoint}{
-        position: absolute;
-        right: 5%;
-        top: 120px;
-        width: 44%;
-        max-width: 666px;
-    }
-    h2{
-        position:relative;
-        text-align:center;
-        color: $offBlack;
-        font-size: 32px;
-        z-index:2;
-        margin: 12px 0;
-    }
-    .bannerLeft, .bannerRight{
-        width: 19%;
-        height: 80%;
-        position:absolute;
-        bottom: 11%;
-        z-index:1;
-    }
-    
-    .bannerLeft{
-        left: -8%;
-    }
-    .bannerRight{
-        right: -8%;
-    }
-        
-}
+
 
 .star{
     font-size: 0.5em;
@@ -132,40 +151,6 @@ body{
     
 }
 
-.unionLogos{
-    
-    width: 90%;
-    margin: 0 auto;
-    padding: 6px 5%; 
-    @include trans;
-    @media #{$breakpoint}{
-        max-width: 575px;
-        position: absolute;
-        width: 45%;
-        left: 2%;
-        top: 0;
-    }
-    img{
-        width: 29%;
-        margin: 0 3% 0 0;
-    }
-}
-.logo{
-    pointer-events: none;
-    margin: 0 auto;
-    width: 90%;
-    @include trans;
-    @media #{$breakpoint}{
-        max-width: 575px;
-        position: absolute;
-        top: 35px;
-        left: 2%;
-        width: 45%;
-    }
-    img{
-        width: 100%;
-    }
-}
 
 
 .graphics{
@@ -336,23 +321,6 @@ body{
     
 }
 
-#countdown{
-    width: 60%;
-    margin: 0 20%;
-    text-align: center;
-    display: inline-block;
-    color: white; 
-    max-width: 666px;
-    @include bebas;
-    @include trans;
-    @media #{$breakpoint}{
-        position: absolute; 
-        top: 15px;
-        right: 5%;
-        width: 45%;
-        margin: 20px 0;
-    }
-}
 
 /* jQuery Countdown styles 1.6.3. */
 .countdown_rtl {
