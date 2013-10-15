@@ -60,6 +60,7 @@ p{
 }
 
 .djs{
+    max-width: 666px;
 a{
     text-decoration: none; 
     border-bottom: 2px solid white;
@@ -87,6 +88,7 @@ a{
         right: 5%;
         top: 120px;
         width: 44%;
+        max-width: 666px;
     }
     h2{
         position:relative;
@@ -336,6 +338,7 @@ body{
     text-align: center;
     display: inline-block;
     color: white; 
+    max-width: 666px;
     @include bebas;
     @include trans;
     @media #{$breakpoint}{
