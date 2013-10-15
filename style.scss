@@ -1,4 +1,5 @@
 $offBlack: rgb(53,52,53);
+$breakpoint: 'screen and (min-width: 601px)';
 
 @font-face {
     font-family: 'bebas_neueregular';
@@ -10,6 +11,14 @@ $offBlack: rgb(53,52,53);
     font-weight: normal;
     font-style: normal;
 
+}
+
+@mixin trans{
+    -webkit-transition: all 500ms ease-in; 
+    -mox-transition: all 500ms ease-in; 
+    -ms-transition: all 500ms ease-in; 
+    -o-transition: all 500ms ease-in; 
+    transition: all 500ms ease-in; 
 }
 
 @mixin tits{
@@ -54,6 +63,13 @@ p{
     background: white;
     padding: 6px;
     position: relative;
+    @include trans;
+    @media #{$breakpoint}{
+        position: absolute;
+        right: 5%;
+        top: 300px;
+        width: 45%;
+    }
     h2{
         position:relative;
         text-align:center;
@@ -94,6 +110,13 @@ body{
     width: 90%;
     margin: 0 auto;
     padding: 6px 5%; 
+    @include trans;
+    @media #{$breakpoint}{
+        position: absolute;
+        width: 45%;
+        left: 5%;
+        top: 0;
+    }
     img{
         width: 29%;
         margin: 0 3% 0 0;
@@ -103,19 +126,27 @@ body{
     pointer-events: none;
     margin: 0 auto;
     width: 90%;
+    @include trans;
+    @media #{$breakpoint}{
+        position: absolute;
+        top: 35px;
+        left: 5%;
+        width: 45%;
+    }
     img{
         width: 100%;
     }
 }
 
 .graphic{
+    display:none;
     background: transparent;
     position: relative;
     width: 70%;
     margin: 25px auto;
     text-align: center;
     img{
-       -webkit-transition: all 500ms ease-in; 
+       @include trans;
         width: 100%;
     }
     .normal{
@@ -170,6 +201,7 @@ body{
 }
 
 .content{
+    display: none;
     width: 70%;
     margin: 0 auto;
     text-align: center;
@@ -187,6 +219,12 @@ body{
     width: 70%;
     margin: 0 auto;
     text-align:center;
+    @media #{$breakpoint}{
+        width: 45%;
+        position: absolute;
+        top: 400px;
+        right: 5%;
+    }
     h5{
         margin: 0;
         &:before, &:after{
@@ -206,19 +244,21 @@ body{
     display: inline-block;
     color: white; 
     @include bebas;
+    @include trans;
+    @media #{$breakpoint}{
+        position: absolute; 
+        top: 15px;
+        right: 5%;
+        width: 45%;
+        margin: 20px 0;
+    }
 }
 
 /* jQuery Countdown styles 1.6.3. */
-.hasCountdown {
-	//border: 1px solid #ccc;
-	//background-color: #eee;
-}
 .countdown_rtl {
 	direction: rtl;
 }
-.countdown_holding span {
-	//color: #888;
-}
+
 .countdown_row {
 	clear: both;
 	width: 100%;
