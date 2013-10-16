@@ -99,7 +99,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 1400px;
+  max-width: 1280px;
   *zoom: 1; }
   .row:before, .row:after {
     content: " ";
@@ -519,7 +519,7 @@ p {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    max-width: 1400px;
+    max-width: 1280px;
     *zoom: 1; }
     .tophalf:before, .tophalf:after {
       content: " ";
@@ -545,7 +545,7 @@ p {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 1400px;
+  max-width: 1280px;
   *zoom: 1;
   -webkit-transition: all 500ms ease-in;
   -moz-transition: all 500ms ease-in;
@@ -571,7 +571,7 @@ p {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 1400px;
+  max-width: 1280px;
   *zoom: 1;
   -webkit-transition: all 500ms ease-in;
   -moz-transition: all 500ms ease-in;
@@ -600,7 +600,7 @@ p {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 1400px;
+  max-width: 1280px;
   *zoom: 1; }
   #countdown:before, #countdown:after {
     content: " ";
@@ -614,7 +614,7 @@ p {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 1400px;
+  max-width: 1280px;
   *zoom: 1;
   position: relative;
   margin-top: 0;
@@ -663,7 +663,7 @@ p {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 1400px;
+  max-width: 1280px;
   *zoom: 1; }
   .djs:before, .djs:after {
     content: " ";
@@ -693,8 +693,9 @@ p {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    max-width: 1400px;
-    *zoom: 1; }
+    max-width: 1280px;
+    *zoom: 1;
+    margin-bottom: 100px; }
     .graphics:before, .graphics:after {
       content: " ";
       display: table; }
@@ -764,14 +765,50 @@ p {
   .content p {
     font-size: 16px;
     margin-top: 0; }
+    @media only screen and (min-width: 768px) {
+      .content p {
+        font-size: 21px; } }
   .content h3 {
     font-size: 24px;
     margin-bottom: 8px; }
+    @media only screen and (min-width: 768px) {
+      .content h3 {
+        margin-top: 4%; } }
 
 .explanation {
-  position: relative; }
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 1280px;
+  *zoom: 1; }
+  .explanation:before, .explanation:after {
+    content: " ";
+    display: table; }
+  .explanation:after {
+    clear: both; }
+  @media only screen and (min-width: 768px) {
+    .explanation {
+      min-height: 700px; } }
   .explanation img {
     display: none; }
+    @media only screen and (min-width: 768px) {
+      .explanation img {
+        display: block;
+        position: relative;
+        padding-left: 0.9375em;
+        padding-right: 0.9375em;
+        width: 41.66667%;
+        float: left;
+        margin-top: 4%; } }
+  @media only screen and (min-width: 768px) {
+    .explanation p, .explanation h3 {
+      position: relative;
+      padding-left: 0.9375em;
+      padding-right: 0.9375em;
+      width: 58.33333%;
+      float: left; } }
 
 /* jQuery Countdown styles 1.6.3. */
 .countdown_rtl {

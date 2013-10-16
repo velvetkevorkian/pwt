@@ -1,5 +1,5 @@
 $offBlack: rgb(53,52,53);
-$row-width: 1400px;
+$row-width: 1280px;
 //$breakpoint: 'screen and (min-width: 769px)';
 //$fontBreakpoint: 'screen and (min-width: 1024px)';
 
@@ -179,6 +179,7 @@ p{
 .graphics{
     @media #{$small}{
         @include grid-row();
+        margin-bottom: 100px;
     }
 }
 
@@ -256,20 +257,39 @@ p{
     p{
         font-size: 16px;
         margin-top: 0;
+        @media #{$small}{
+            font-size: 21px;
+        }
     }
     h3{
         font-size: 24px;
         margin-bottom: 8px;
+        @media #{$small}{
+            margin-top: 4%;
+        }
     }
     
     
 }
 
 .explanation{
-    position: relative;
-    //width: 90%;
+    @include grid-row();
+    @media #{$small}{
+        min-height: 700px;
+    }
     img{
         display: none;
+        @media #{$small}{
+            display: block;
+            @include grid-column($columns: 5);
+            margin-top: 4%;
+        }
+        
+    }
+    p, h3{
+        @media #{$small}{
+            @include grid-column($columns: 7);
+        }
     }
 }
 
