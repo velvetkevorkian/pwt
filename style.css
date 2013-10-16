@@ -493,6 +493,19 @@ select {
 *, *:before, *:after {
   box-sizing: border-box; }
 
+body {
+  background: black;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1280px; }
+
+.wrap {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1280px; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'bebas_neueregular', helvetica, arial, sans-serif;
   color: whitesmoke; }
@@ -612,6 +625,10 @@ p {
   .date .bannerRight {
     right: 7.5%; }
 
+.star {
+  font-size: 0.5em;
+  vertical-align: middle; }
+
 .djs {
   width: 70%;
   margin: 0 auto;
@@ -649,48 +666,12 @@ p {
       color: #d68005;
       border-bottom-color: #d68005; }
 
-.djs a {
-  text-decoration: none;
-  border-bottom: 2px solid white;
-  -webkit-transition: all 500ms ease-in;
-  -moz-transition: all 500ms ease-in;
-  -ms-transition: all 500ms ease-in;
-  -o-transition: all 500ms ease-in;
-  transition: all 500ms ease-in; }
-  .djs a:link, .djs a:visited {
-    margin-bottom: -2px;
-    color: white; }
-  .djs a:hover {
-    color: #d68005;
-    border-bottom-color: #d68005; }
-
-.star {
-  font-size: 0.5em;
-  vertical-align: middle; }
-
-body {
-  background: black;
-  margin: 0 auto;
-  min-width: 320px;
-  max-width: 1280px; }
-
-@media screen and (min-width: 769px) {
-  .graphics {
-    position: relative;
-    margin-bottom: 55%;
-    text-align: center; } }
-
 .graphic {
   background: transparent;
   position: relative;
   width: 70%;
   margin: 25px auto;
   text-align: center; }
-  @media screen and (min-width: 769px) {
-    .graphic {
-      float: left;
-      width: 27%;
-      margin: 0 3% 100px 3%; } }
   .graphic img {
     -webkit-transition: all 500ms ease-in;
     -moz-transition: all 500ms ease-in;
@@ -732,59 +713,21 @@ body {
 #drinks h4, #pens h4 {
   padding-top: 5%; }
 
-.wrap {
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  max-width: 1280px; }
-
 .content {
-  width: 70%;
+  width: 95%;
   margin: 0 auto;
   text-align: center; }
-  @media screen and (min-width: 769px) {
-    .content {
-      position: relative;
-      top: 500px; } }
   .content p {
     font-size: 16px;
     margin-top: 0; }
-    @media screen and (min-width: 1024px) {
-      .content p {
-        font-size: 18px; } }
   .content h3 {
     font-size: 24px;
     margin-bottom: 8px; }
-    @media screen and (min-width: 769px) {
-      .content h3 {
-        width: 60%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        text-align: left;
-        margin: 6px 0; } }
 
 .explanation {
   position: relative; }
   .explanation img {
     display: none; }
-    @media screen and (min-width: 769px) {
-      .explanation img {
-        display: block;
-        position: absolute;
-        top: 12px;
-        left: 0;
-        width: 35%; } }
-  @media screen and (min-width: 769px) {
-    .explanation {
-      min-height: 500px; }
-      .explanation p {
-        width: 60%;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        text-align: left; } }
 
 /* jQuery Countdown styles 1.6.3. */
 .countdown_rtl {

@@ -38,6 +38,21 @@ $fontBreakpoint: 'screen and (min-width: 1024px)';
     box-sizing:border-box;
 }
 
+body{
+    background: black;
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1280px;
+    
+}
+
+.wrap{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
 
 h1, h2, h3, h4, h5, h6{
     @include bebas;
@@ -108,6 +123,11 @@ p{
         
 }
 
+.star{
+    font-size: 0.5em;
+    vertical-align:middle;
+}
+
 
 .djs{
     width: 70%;
@@ -138,51 +158,8 @@ p{
     }
 }
 
-
-.djs{
-    
-a{
-    text-decoration: none; 
-    border-bottom: 2px solid white;
-    &:link, &:visited{
-        margin-bottom: -2px;
-        color: white;
-    }
-    &:hover{
-        color: rgb(214, 128, 5);
-        border-bottom-color: rgb(214, 128, 5);
-    }
-    @include trans;
-}
-}
-
-
-
-.star{
-    font-size: 0.5em;
-    vertical-align:middle;
-}
-
-body{
-    background: black;
-    margin: 0 auto;
-    min-width: 320px;
-    max-width: 1280px;
-    
-}
-
-
-
 .graphics{
-    @media #{$breakpoint}{
-        position: relative;
-        margin-bottom: 55%;
-        text-align:center;
-    }
 }
-
-
-
 
 .graphic{
     background: transparent;
@@ -190,13 +167,6 @@ body{
     width: 70%;
     margin: 25px auto;
     text-align: center;
-    
-    @media #{$breakpoint}{
-        //clear: both;
-        float: left;
-        width: 27%;
-        margin: 0 3% 100px 3%;
-    }
         
     img{
        @include trans;
@@ -246,45 +216,22 @@ body{
     }
 }
 
-.wrap{
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    max-width: 1280px;
-}
+
 //.tophalf{
 //    max-width:1280px;
 //}
 .content{
-    width: 70%;
+    width: 95%;
     margin: 0 auto;
     text-align: center;
-    @media #{$breakpoint}{
-        position: relative;
-        top: 500px;
-    }
+    
     p{
         font-size: 16px;
         margin-top: 0;
-        @media #{$fontBreakpoint}{
-            font-size: 18px;
-        }
     }
     h3{
         font-size: 24px;
         margin-bottom: 8px;
-        @media #{$breakpoint}{
-            width: 60%;
-            position: absolute;
-            top: 0;
-            //float: left;
-            right: 0;
-            //border: 1px solid red;
-            text-align: left;
-            margin: 6px 0;
-        }
-        
     }
     
     
@@ -292,30 +239,9 @@ body{
 
 .explanation{
     position: relative;
+    //width: 90%;
     img{
         display: none;
-        @media #{$breakpoint}{
-            display: block;
-            //float: left;
-            position: absolute;
-            top: 12px;
-            left: 0;
-            width: 35%;
-        }
-    }
-    @media #{$breakpoint}{
-        min-height: 500px;
-        
-        p{
-            width: 60%;
-            //border: 1px solid red;
-            position: absolute;
-            top: 60px;
-            right: 0;
-            text-align:left;
-            
-        }
-        
     }
 }
 
