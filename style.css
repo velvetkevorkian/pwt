@@ -99,7 +99,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5em;
+  max-width: 1400px;
   *zoom: 1; }
   .row:before, .row:after {
     content: " ";
@@ -496,15 +496,13 @@ select {
 body {
   background: black;
   margin: 0 auto;
-  min-width: 320px;
-  max-width: 1280px; }
+  min-width: 320px; }
 
 .wrap {
   background-color: black;
   width: 100%;
   height: 100%;
-  margin: 0 auto;
-  max-width: 1280px; }
+  margin: 0 auto; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'bebas_neueregular', helvetica, arial, sans-serif;
@@ -514,13 +512,40 @@ p {
   color: white;
   font-family: 'Titillium Web', sans-serif; }
 
+@media only screen and (min-width: 768px) {
+  .tophalf {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 1400px;
+    *zoom: 1; }
+    .tophalf:before, .tophalf:after {
+      content: " ";
+      display: table; }
+    .tophalf:after {
+      clear: both; } }
+
+@media only screen and (min-width: 768px) {
+  .leftCol, .rightCol {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 50%;
+    float: left; } }
+
+@media only screen and (min-width: 768px) {
+  .rightCol {
+    margin-top: 8%; } }
+
 .unionLogos {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5em;
+  max-width: 1400px;
   *zoom: 1;
   -webkit-transition: all 500ms ease-in;
   -moz-transition: all 500ms ease-in;
@@ -546,7 +571,7 @@ p {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5em;
+  max-width: 1400px;
   *zoom: 1;
   -webkit-transition: all 500ms ease-in;
   -moz-transition: all 500ms ease-in;
@@ -575,7 +600,7 @@ p {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5em;
+  max-width: 1400px;
   *zoom: 1; }
   #countdown:before, #countdown:after {
     content: " ";
@@ -589,7 +614,7 @@ p {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5em;
+  max-width: 1400px;
   *zoom: 1;
   position: relative;
   margin-top: 0;
@@ -638,7 +663,7 @@ p {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5em;
+  max-width: 1400px;
   *zoom: 1; }
   .djs:before, .djs:after {
     content: " ";
@@ -653,18 +678,28 @@ p {
     margin-top: 12px; }
   .djs a {
     text-decoration: none;
-    border-bottom: 2px solid white;
-    -webkit-transition: all 500ms ease-in;
-    -moz-transition: all 500ms ease-in;
-    -ms-transition: all 500ms ease-in;
-    -o-transition: all 500ms ease-in;
-    transition: all 500ms ease-in; }
+    border-bottom: 2px solid white; }
     .djs a:link, .djs a:visited {
       margin-bottom: -2px;
       color: white; }
     .djs a:hover {
       color: #d68005;
       border-bottom-color: #d68005; }
+
+@media only screen and (min-width: 768px) {
+  .graphics {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 1400px;
+    *zoom: 1; }
+    .graphics:before, .graphics:after {
+      content: " ";
+      display: table; }
+    .graphics:after {
+      clear: both; } }
 
 .graphic {
   background: transparent;
@@ -687,7 +722,8 @@ p {
     position: absolute;
     opacity: 0;
     top: 0;
-    left: 0; }
+    left: 0;
+    width: 70%; }
     .graphic .hover:hover {
       opacity: 1; }
   .graphic h4 {
@@ -709,9 +745,14 @@ p {
     left: -5%; }
   .graphic .bannerRight {
     right: -5%; }
-
-#drinks h4, #pens h4 {
-  padding-top: 5%; }
+  @media only screen and (min-width: 768px) {
+    .graphic {
+      position: relative;
+      padding-left: 0.9375em;
+      padding-right: 0.9375em;
+      width: 33.33333%;
+      float: left;
+      padding: 50px; } }
 
 .content {
   width: 95%;
