@@ -578,7 +578,9 @@ p {
   margin-bottom: 0;
   max-width: 62.5em;
   *zoom: 1;
-  position: relative; }
+  position: relative;
+  margin-top: 0;
+  padding-top: 0; }
   .date:before, .date:after {
     content: " ";
     display: table; }
@@ -589,20 +591,26 @@ p {
     padding-left: 0.9375em;
     padding-right: 0.9375em;
     width: 66.66667%;
-    float: left;
+    float: right;
+    margin-left: 16.66667%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+    white-space: nowrap;
     background: white;
     text-align: center;
     color: #353435;
     font-size: 32px;
     z-index: 2;
-    margin: 12px 0; }
+    padding: 18px 6px; }
   .date .bannerLeft, .date .bannerRight {
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    width: 16.66667%;
-    float: left;
-    z-index: 1; }
+    position: absolute;
+    top: 30%;
+    width: 15%; }
+  .date .bannerLeft {
+    left: 7.5%; }
+  .date .bannerRight {
+    right: 7.5%; }
 
 .djs {
   max-width: 666px; }
@@ -806,3 +814,5 @@ body {
   display: block;
   width: 100%;
   font-size: 4em; }
+
+/*# sourceMappingURL=style.css.map */

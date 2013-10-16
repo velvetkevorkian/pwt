@@ -78,45 +78,35 @@ p{
 
 .date{
     @include grid-row();
-    //padding: 0 5%;
-//   
-//    margin: 25px auto;
-    
-//    padding: 6px;
     position: relative;
-    //@include trans;
+    margin-top: 0;
+    padding-top:0;
     
     h2{
-        //position:relative;
-        @include grid-column($columns: 8);
+        @include grid-column(8, true, true, 2, false, false, false, false);
+        white-space:nowrap;
         background: white;
-         //width: 80%;
         text-align:center;
         color: $offBlack;
         font-size: 32px;
         z-index:2;
-        margin: 12px 0;
-    }
-    .bannerLeft, .bannerRight{
-        @include grid-column($columns: 2);
-//        display: none;
-//        width: 19%;
-//        height: 80%;
-//        position:absolute;
-//        bottom: 11%;
-        z-index:1;
+        padding: 18px 6px;
+        
     }
     
+    .bannerLeft, .bannerRight{
+        position: absolute;
+        top: 30%;
+        width: 15%;
+    }
     .bannerLeft{
-//        left: -8%;
+        left: 7.5%;
     }
     .bannerRight{
-//        right: -8%;
+        right: 7.5%;
     }
         
 }
-
-
 
 
 .djs{
