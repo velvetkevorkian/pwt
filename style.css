@@ -613,7 +613,27 @@ p {
     right: 7.5%; }
 
 .djs {
-  max-width: 666px; }
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5em;
+  *zoom: 1; }
+  .djs:before, .djs:after {
+    content: " ";
+    display: table; }
+  .djs:after {
+    clear: both; }
+  .djs h5 {
+    margin: 0; }
+    .djs h5:before, .djs h5:after {
+      content: " - "; }
+  .djs h2 {
+    margin-top: 12px; }
   .djs a {
     text-decoration: none;
     border-bottom: 2px solid white;
@@ -628,6 +648,21 @@ p {
     .djs a:hover {
       color: #d68005;
       border-bottom-color: #d68005; }
+
+.djs a {
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  -webkit-transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -ms-transition: all 500ms ease-in;
+  -o-transition: all 500ms ease-in;
+  transition: all 500ms ease-in; }
+  .djs a:link, .djs a:visited {
+    margin-bottom: -2px;
+    color: white; }
+  .djs a:hover {
+    color: #d68005;
+    border-bottom-color: #d68005; }
 
 .star {
   font-size: 0.5em;
@@ -704,9 +739,6 @@ body {
   margin: 0 auto;
   max-width: 1280px; }
 
-.tophalf {
-  max-width: 1280px; }
-
 .content {
   width: 70%;
   margin: 0 auto;
@@ -753,23 +785,6 @@ body {
         top: 60px;
         right: 0;
         text-align: left; } }
-
-.djs {
-  width: 70%;
-  margin: 0 auto;
-  text-align: center; }
-  @media screen and (min-width: 769px) {
-    .djs {
-      width: 45%;
-      position: absolute;
-      top: 325px;
-      right: 5%; } }
-  .djs h5 {
-    margin: 0; }
-    .djs h5:before, .djs h5:after {
-      content: " - "; }
-  .djs h2 {
-    margin-top: 12px; }
 
 /* jQuery Countdown styles 1.6.3. */
 .countdown_rtl {

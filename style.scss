@@ -110,7 +110,37 @@ p{
 
 
 .djs{
-    max-width: 666px;
+    width: 70%;
+    margin: 0 auto;
+    text-align:center;
+    @include grid-row();
+    h5{
+        margin: 0;
+        &:before, &:after{
+            content: " - ";
+        }
+    }
+    h2{
+        margin-top: 12px;
+    }
+    a{
+        text-decoration: none; 
+        border-bottom: 2px solid white;
+        &:link, &:visited{
+            margin-bottom: -2px;
+            color: white;
+        }
+        &:hover{
+            color: rgb(214, 128, 5);
+            border-bottom-color: rgb(214, 128, 5);
+        }
+        @include trans;
+    }
+}
+
+
+.djs{
+    
 a{
     text-decoration: none; 
     border-bottom: 2px solid white;
@@ -223,9 +253,9 @@ body{
     margin: 0 auto;
     max-width: 1280px;
 }
-.tophalf{
-    max-width:1280px;
-}
+//.tophalf{
+//    max-width:1280px;
+//}
 .content{
     width: 70%;
     margin: 0 auto;
@@ -289,27 +319,6 @@ body{
     }
 }
 
-.djs{
-    width: 70%;
-    margin: 0 auto;
-    text-align:center;
-    @media #{$breakpoint}{
-        width: 45%;
-        position: absolute;
-        top: 325px;
-        right: 5%;
-    }
-    h5{
-        margin: 0;
-        &:before, &:after{
-            content: " - ";
-        }
-    }
-    h2{
-        margin-top: 12px;
-    }
-    
-}
 
 
 /* jQuery Countdown styles 1.6.3. */
