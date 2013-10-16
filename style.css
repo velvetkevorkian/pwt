@@ -701,10 +701,19 @@ p {
     .graphics:after {
       clear: both; } }
 
+@media only screen and (min-width: 768px) {
+  .graphicWrap {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    width: 33.33333%;
+    float: left;
+    padding: 1%; } }
+
 .graphic {
   background: transparent;
   position: relative;
-  width: 70%;
+  width: 90%;
   margin: 25px auto;
   text-align: center; }
   .graphic img {
@@ -722,8 +731,7 @@ p {
     position: absolute;
     opacity: 0;
     top: 0;
-    left: 0;
-    width: 70%; }
+    left: 0; }
     .graphic .hover:hover {
       opacity: 1; }
   .graphic h4 {
@@ -745,14 +753,9 @@ p {
     left: -5%; }
   .graphic .bannerRight {
     right: -5%; }
-  @media only screen and (min-width: 768px) {
-    .graphic {
-      position: relative;
-      padding-left: 0.9375em;
-      padding-right: 0.9375em;
-      width: 33.33333%;
-      float: left;
-      padding: 50px; } }
+
+#drinks h4, #pens h4 {
+  padding-top: 5%; }
 
 .content {
   width: 95%;

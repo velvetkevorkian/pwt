@@ -182,10 +182,18 @@ p{
     }
 }
 
+.graphicWrap{
+    @media #{$small}{
+        @include grid-column($columns: 4);
+        padding: 1%;
+        //margin: 0 25px;
+    }
+}
+
 .graphic{
     background: transparent;
     position: relative;
-    width: 70%;
+    width: 90%;
     margin: 25px auto;
     text-align: center;
     
@@ -203,7 +211,7 @@ p{
         opacity: 0;
         top: 0;
         left: 0;
-        width: 70%;
+       // width: 70%;
         &:hover{opacity:1;}
     }
             
@@ -230,17 +238,13 @@ p{
     .bannerRight{
         right: -5%;
     }
-    @media #{$small}{
-        @include grid-column($columns: 4);
-        padding: 50px;
-        //margin: 0 25px;
-    }
+    
         
 }
 
 #drinks, #pens{
     h4{
-       // padding-top: 5%;
+       padding-top: 5%;
     }
 }
 
